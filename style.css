@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Anton&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Press+Start+2P&family=Sixtyfour+Convergence&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Kaushan+Script&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Suez+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Arimo:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Patua+One&family=Permanent+Marker&family=Pirata+One&family=Playwrite+AU+QLD:wght@100..400&family=Press+Start+2P&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Sixtyfour+Convergence&family=Suez+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+/* -- Este código é protegido pelos direitos altorais, não deve ser usado e nem copiado 
+sem a altorização do altor.-- */
+
+
+:root {
+    --letra: 'Lilita One', Arial, Helvetica, sans-serif;
+    --fundo: rgb(247, 247, 255);
+    --cor1: rgb(192, 112, 7);
+}
+
+html {
+    font-size: 1.2vw;
+}
+
+body {
+    background-color: var(--fundo);
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    perspective: 100000px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 1.4rem;
+}section {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 3rem;
+}
+
+/* ---- Inicio */
+#inicio {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+}.img-inicio {
+    width: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        box-shadow: 0.2rem 0.2rem 0.3rem black, 0.2rem 0.2rem 0.5rem black;
+        border-radius: 1rem;
+    }
+    div {
+        position: absolute;
+        display: flex;
+        gap: 1rem;
+        padding: 0.8rem 1rem;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+        color: var(--cor1);
+        box-shadow: 0.2rem 0.2rem 0.3rem black;
+        border-radius: 0.5rem;
+        transition: 0.3s;
+    }div:hover {
+        background-color: rgb(75, 75, 75);
+        box-shadow: 0.2rem 0.2rem 0.3rem var(--cor1);
+    }
+    .tema1 {
+        top: 50%;
+        right: -4rem;
+        animation: sca 1s linear infinite alternate;
+    }.tema2 {
+        bottom: 2rem;
+        right: -1rem;
+        animation: sca 1s linear infinite alternate-reverse;
+    }
+}@keyframes sca {
+    to {
+        transform: scale(1.02);
+    }
+}
+.texto-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 2rem;
+}
+.redes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-size: 2rem;
+        padding: 1rem 2rem;
+        color: white;
+        border-radius: 0.5rem;
+        transition: 1s;
+        background-color: var(--cor1);
+    }div:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+#link {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+        color: var(--cor1);
+        box-shadow: 0.2rem 0.2rem 0.3rem black;
+        padding: 2rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            border-radius: 0.5rem;
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--cor1);
+            color: white;
+        }
+    }
+}
+
+
+#destaque {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}.item {
+    background-color: var(--cor1);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: white;
+    h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    img {
+        width: 100%;
+        border: 0.2rem solid white;
+        border-radius: 0.5rem;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        h3 {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-color: var(--cor1);
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 0.2rem solid white;
+        }
+    }
+    p {
+        padding-top: 2rem;
+    }
+}
+
+
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    background-color: var(--cor1);
+    color: white;
+    font-weight: bold;
+
+}
+
+/* -- Responsividade para dispositivos moveis -- */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html {
+        font-size: 1.9vw;
+    }
+/* ---- Inicio */
+#inicio {
+    grid-template-columns: auto;
+    gap: 2rem;
+}.img-inicio {
+    div {
+        padding: 1.5rem 1rem;
+        font-size: 2rem;
+    }
+    .tema1 {
+        top: unset;
+        bottom: 2rem;
+        right: 2rem;
+    }.tema2 {
+        bottom: 2rem;
+        right: unset;
+        left: 2rem;
+    }
+}
+.redes {
+    justify-content: center;
+}
+
+
+#link {
+    display: flex;
+    flex-direction: column;
+    div {
+        width: 100%;
+    }
+}
+
+
+#destaque {
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+
+
+footer {
+    font-size: 1.5rem;
+}
+}
+
+
+
+@media (max-width: 767px) {
+    html {
+        font-size: 2.5vw;
+    }
+section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+    /* ---- Inicio */
+#inicio {
+    grid-template-columns: auto;
+    gap: 2rem;
+}.img-inicio {
+    div {
+        padding: 1rem 1rem;
+        font-size: 1.6rem;
+    }
+    .tema1 {
+        top: unset;
+        bottom: 2rem;
+        right: 1rem;
+    }.tema2 {
+        bottom: 2rem;
+        right: unset;
+        left: 1rem;
+    }
+}
+.redes {
+    justify-content: center;
+}
+
+
+#link {
+    display: flex;
+    flex-direction: column;
+    div {
+        width: 100%;
+    }
+}
+
+
+#destaque {
+    grid-template-columns: repeat(2,1fr);
+}
+footer {
+    font-size: 1.5rem;
+}
+} 
+
+
+
+
+
