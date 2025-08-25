@@ -84,7 +84,7 @@ p {
         animation: sca 1s linear infinite alternate;
     }.tema2 {
         bottom: 2rem;
-        right: -1rem;
+        right: -4rem;
         animation: sca 1s linear infinite alternate-reverse;
     }
 }@keyframes sca {
@@ -315,6 +315,7 @@ footer {
     font-size: 1.5rem;
 }
 } 
+
 
 
 
